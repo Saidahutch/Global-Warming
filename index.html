@@ -27,7 +27,20 @@
 	  <p>
 	  This is showing the characters Earth Man and Oil Guy infront of the first version of our set. 
   </p>
-	  <h1>Our Code for the LIghting</h1>
-	  
+	  <h1>Our Code for the Lighting</h1>
+	  <pre>
+	  forever(function () {
+    light.setAll(0x0000ff)
+    for (let index = 0; index <= 255; index++) {
+        light.setBrightness(index)
+        pause(20)
+    }
+    for (let index = 0; index <= 255; index++) {
+        light.setBrightness(255 - index)
+        pause(20)
+    }
+})
+		  
+	  </pre>
 </body>
 </html>
